@@ -20,7 +20,10 @@ const Home = () => {
         {spacPosts &&
           spacPosts.map(p => (
             <li key={p?.data?.id}>
-              <a href={`https://www.reddit.com${p?.data?.permalink}`}>
+              <a
+                href={`https://www.reddit.com${p?.data?.permalink}`}
+                target="_blank"
+              >
                 {p?.data?.title}
               </a>
             </li>
